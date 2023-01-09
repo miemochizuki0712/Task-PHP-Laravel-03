@@ -28,12 +28,15 @@ echo "\n";
 数値が入った配列array(1, 3, 5 ,7, 9) を渡すと
 その要素をすべてかけた結果を返す関数を作成してください*/
 
-$arr = array(1, 3, 5 ,7, 9);
-$result = $arr[0];
-for ($i=1;$i<count($arr);$i++){
-$result *= $arr[$i];
+function multiply($arr){
+  $result = $arr[0];
+  for ($i=1;$i<count($arr);$i++){
+  $result *= $arr[$i];
+  }
+  return $result;
 }
-echo $result;
+$arr = array(1, 3, 5 ,7, 9);
+echo multiply($arr);
 echo "\n";
 
 /*
